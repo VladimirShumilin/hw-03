@@ -30,17 +30,4 @@ namespace hw_03.Model
             return $"Получатель: {RecipientName}.\nКонтактный тел: {RecipientTel}\nАдрес: {Address}";
         }
     }
-
-    //internal class ff<T> where T : Delivery
-    //{
-        
-    //}
-    //internal class ddd
-    //{
-    //    public void fdf()
-    //    {
-    //        ff<HomeDelivery> hd = new();
-    //    }
-    //}
-
 }
