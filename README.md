@@ -51,7 +51,7 @@
 	Класс ProductCollection
 
 * Использование агрегации классов;
-	Классы: Order объект Delivery   
+	Классы: HomeDelivery объект СourierService   
 
 * Использование индексаторов;
 	Класс ProductCollection

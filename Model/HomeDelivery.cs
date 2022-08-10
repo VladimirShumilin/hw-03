@@ -21,6 +21,10 @@
         public override DeliveryStatus Status { get; protected set; }
         public СouriersService СourierService { get; private set; }
 
+        /// <summary>
+        /// Конструктор с агрегацией объекта СourierService
+        /// </summary>
+        /// <param name="courierService"></param>
         public HomeDelivery(СouriersService courierService):base()
         {
             СourierService = courierService;

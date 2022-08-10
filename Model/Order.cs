@@ -10,7 +10,7 @@ namespace hw_03.Model
     /// <typeparam name="TDelivery"></typeparam>
     internal class Order<TDelivery>: OrderBase where TDelivery : Delivery
     {
-        //отношения типа аггрегация 
+       
         private TDelivery Delivery;
 
         public int Number { get; }
@@ -25,6 +25,11 @@ namespace hw_03.Model
         private readonly ProductCollection products = new();
 
         public TDelivery GetDelivery() => Delivery;
+        /// <summary>
+        /// Асоциация с объектом Delivery
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="newDelivery"></param>
         public void ChangeDelivery<T>(T newDelivery) where T : TDelivery
         {
             Delivery = newDelivery;

@@ -21,7 +21,11 @@ namespace hw_03.Model
 
             base.Add(item);
         }
-
+        /// <summary>
+        ///  индексатор
+        /// </summary>
+        /// <param name="serialNumber"></param>
+        /// <returns></returns>
         public Product this[string serialNumber]
         {
             get
@@ -43,7 +47,7 @@ namespace hw_03.Model
             StringBuilder sb = new();
 
             foreach (Product p in this)
-                sb.Append($"{p.Gtin};{p.Name};{p.SerialNumber};{(p.Price*p.Count)}\n");
+                sb.Append($"{p.GetEan13()};{p.Name};{p.SerialNumber};{(p.Price*p.Count)}\n");
 
             return sb.ToString();
         }
